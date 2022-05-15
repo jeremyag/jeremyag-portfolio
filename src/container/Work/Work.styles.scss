@@ -10,7 +10,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4rem 0 2rem;
+  margin: 1rem 0 1rem;
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -48,13 +48,14 @@
   .app__work-item {
     width: 270px;
     flex-direction: column;
-    margin: 2rem;
+    margin: 0 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #fff;
     color: black;
     cursor: pointer;
     transition: all 0.3s ease;
+    height: 100%;
 
     &:hover {
       box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -65,16 +66,17 @@
       padding: 1.25rem;
       border-radius: 0.75rem;
     }
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 500px) {
       width: 100%;
       margin: 1rem;
+      height: initial;
     }
   }
 }
 
 .app__work-img {
   width: 100%;
-  height: 230px;
+  height: 145px;
   position: relative;
 
   img {
@@ -140,4 +142,8 @@
     background-color: #fff;
     top: -25px;
   }
+}
+
+.app__work-all--button {
+  display: flex;
 }

@@ -70,6 +70,21 @@
   }
 }
 
+.subhead-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--black-color);
+
+  @media screen and (min-width: 2000px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+
 .p-text {
   font-size: 0.8rem;
   text-align: left;
@@ -112,4 +127,39 @@
 
 .github-color {
   color: #24292f;
+}
+
+.border-dashed {
+  padding: 0;
+  border: 0.5px dashed var(--lightGray-color);
+  margin: 10px 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+a.btn,
+button.btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+
+  font-weight: 500;
+  color: var(--white-color);
+  outline: none;
+  margin: 2rem 0 0 0;
+  font-family: var(--font-base);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background-color: #2430af;
+  }
 }

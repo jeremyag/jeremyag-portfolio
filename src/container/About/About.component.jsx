@@ -1,42 +1,54 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+
 import { AppWrap } from "../../wrapper";
 import "./About.styles.scss";
-import { urlFor, client } from "../../client";
+import { TypingEffect } from "../../components";
 
 function About() {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-    client.fetch(query).then((data) => setAbouts(data));
-  }, []);
-
   return (
     <>
       <h2 className="head-text">
-        I Know That <span>Good Design</span>
-        <br />
-        means <span>Good Business</span>
+        About <span>Me</span>
       </h2>
       <div className="app__profiles">
-        {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={urlFor(about.imgUrl)} alt="About title" />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
+        <div className="app__profile-item">
+          <h3 className="subhead-text">Personal Details</h3>
+          <div className="border-dashed"></div>
+          <p className="p-text">
+            <span className="bold-text">Language:</span> Filipino, English
+          </p>
+          <p className="p-text">
+            <span className="bold-text">Nationality:</span> Filipino
+          </p>
+          <p className="p-text">
+            <span className="bold-text">Location:</span> Batangas, Philippines
+          </p>
+        </div>
+        <div className="app__profile-item">
+          <h3 className="app__about-title text-left">
+            I am a{" "}
+            <TypingEffect
+              text={"Software Engineer"}
+              listText={[
+                "Software Engineer",
+                "Web Developer",
+                "Lifelong Learner",
+              ]}
+            />
+            <div className="border-dashed"></div>
+            <p className="p-text">
+              I love to design and build softwares (especially web
+              applications). Nowadays, I work with Web ERP and Systems
+              Integrations.
             </p>
-          </motion.div>
-        ))}
+            <br />
+            <p className="p-text">
+              I am passionate about software development field. I consider
+              myself as a Lifelong Learner and always find ways to enhance my
+              skills.
+            </p>
+          </h3>
+        </div>
       </div>
     </>
   );
