@@ -1,0 +1,58 @@
+.app__social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 2rem 1rem;
+
+  a {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0.5rem 0;
+    border: 1px solid var(--lightGray-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+
+      svg {
+        color: var(--white-color);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 60px;
+      height: 60px;
+
+      margin: 0.25rem 0;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    left: 0;
+  }
+}
