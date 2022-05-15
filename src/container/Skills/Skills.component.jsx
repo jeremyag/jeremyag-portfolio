@@ -29,6 +29,7 @@ const Skills = () => {
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
+          {console.log(skills)}
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
