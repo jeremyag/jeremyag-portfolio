@@ -14,13 +14,13 @@ function About() {
         <div className="app__profile-item">
           <h3 className="subhead-text">Personal Details</h3>
           <div className="border-dashed"></div>
-          <p className="p-text">
+          <p className="p-text p-about">
             <span className="bold-text">Language:</span> Filipino, English
           </p>
-          <p className="p-text">
+          <p className="p-text p-about">
             <span className="bold-text">Nationality:</span> Filipino
           </p>
-          <p className="p-text">
+          <p className="p-text p-about">
             <span className="bold-text">Location:</span> Batangas, Philippines
           </p>
         </div>
@@ -36,13 +36,13 @@ function About() {
               ]}
             />
             <div className="border-dashed"></div>
-            <p className="p-text">
+            <p className="p-text p-about">
               I love to design and build softwares (especially web
               applications). Nowadays, I work with Web ERP and Systems
               Integrations.
             </p>
             <br />
-            <p className="p-text">
+            <p className="p-text p-about">
               I am passionate about software development field. I consider
               myself as a Lifelong Learner and always find ways to enhance my
               skills.

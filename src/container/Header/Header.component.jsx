@@ -31,7 +31,7 @@ function Header() {
           viewport={{ once: true }}
         >
           <h1 className="head-text">
-            I am Jeremy <span>Agcaoili</span>
+            I am Jeremy <span>Agcaoili.</span>
           </h1>
         </motion.div>
         <motion.div
@@ -39,7 +39,7 @@ function Header() {
           transition={{ duration: 1, delay: 2 }}
           viewport={{ once: true }}
         >
-          <p className="p-text">I'm a passionate Software Engineer!</p>
+          <p className="p-text">I'm a passionate Software Engineer.</p>
         </motion.div>
       </div>
 
