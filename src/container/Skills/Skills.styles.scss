@@ -99,7 +99,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 1rem 0;
+  // margin: 1rem 0;
 }
 
 .app__skills-exp-works {
@@ -111,7 +111,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1rem;
-    cursor: pointer;
+    // cursor: pointer;
 
     h4 {
       font-weight: 500;
@@ -153,5 +153,24 @@
     font-size: 1.75rem !important;
     max-width: 500px !important;
     line-height: 2 !important;
+  }
+}
+
+.table-experience {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    width: 50%;
+  }
+
+  tr.app__skills-exp-item {
+    td:nth-child(1) {
+      text-align: right;
+    }
+    td:nth-child(2) {
+      border-left: 1px dotted grey;
+      padding-left: 0.8rem;
+    }
   }
 }
